@@ -1,0 +1,7 @@
+@import '../../theme/mixins.scss';
+
+.sidebar {
+  grid-area: sidebar;
+
+  // @include shadowed;
+}
