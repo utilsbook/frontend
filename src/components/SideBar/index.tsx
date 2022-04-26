@@ -38,17 +38,16 @@ const SideBar = () => {
     navigate(path);
   };
   return (
-    <Menu
-      className="sidebar"
-      onClick={onClick}
-      style={{
-        width: 256,
-      }}
-      defaultSelectedKeys={['1']}
-      defaultOpenKeys={['sub1']}
-      mode="inline"
-      items={items}
-    />
+    <div className="sidebar">
+      <Menu
+        className="menu"
+        onClick={onClick}
+        defaultSelectedKeys={['components']}
+        defaultOpenKeys={['components']}
+        mode="inline"
+        items={items}
+      />
+    </div>
   );
 };
 

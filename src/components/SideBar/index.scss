@@ -1,7 +1,18 @@
 @import '../../theme/mixins.scss';
+@import '../../index.scss';
 
 .sidebar {
   grid-area: sidebar;
 
-  // @include shadowed;
+  padding-top: $content-padding;
+
+  position: relative;
+
+  @include shadowed;
+}
+
+.menu {
+  position: sticky;
+  top: 0;
+  border-right: 0;
 }
