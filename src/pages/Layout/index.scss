@@ -1,11 +1,10 @@
 #root {
   min-height: 100vh;
-  min-width: 100vw;
 
   display: grid;
   grid-template-areas:
-  "header header"
-  "sidebar main";
+    'header header'
+    'sidebar main';
 
   grid-template-rows: 64px 1fr;
   grid-template-columns: 256px 1fr;

@@ -4,7 +4,6 @@ import Layout from './pages/Layout/index';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NotFound from './components/NotFound';
 import Component from './pages/Component';
-import ButtonPage from './pages/Component/ButtonPage/index';
 import './index.scss';
 import Home from './pages/Home';
 
@@ -17,7 +16,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="components" element={<Component />}>
-            <Route path=":slug" element={<ButtonPage />} />
+            <Route path=":slug" />
           </Route>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />

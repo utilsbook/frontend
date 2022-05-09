@@ -1,4 +1,4 @@
-const Button = () => {
+const ButtonPage: React.FC<any> = () => {
   return (
     <>
       <h1>Button</h1>
@@ -6,4 +6,4 @@ const Button = () => {
   );
 };
 
-export default Button;
+export default ButtonPage;

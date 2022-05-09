@@ -21,9 +21,12 @@ function getItem(
 
 const items = [
   getItem('组件列表', 'components', <BuildOutlined />, [
+    getItem('分割线 Divider', 'divider'),
     getItem('按钮 Button', 'button'),
-    getItem('锚点 Anchor', 'anchor'),
   ]),
+  // getItem('算法实现', 'algorithms', <CalculatorOutlined />, [
+  //   getItem('Lodash', 'lodash', null, [getItem('isNil', 'isNil')]),
+  // ]),
 ];
 
 const SideBar = () => {

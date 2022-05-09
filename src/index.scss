@@ -1,8 +1,14 @@
 @import 'antd/dist/antd.css';
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
 $content-padding: 12px;
+
+hr {
+  border: none;
+  border-top: 2px solid #f9f9f9;
+}
