@@ -1,5 +1,5 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { duotoneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import code from './code';
 
 interface CodeBlockProps {
@@ -14,7 +14,7 @@ const CodeBlock: React.FC<CodeBlockProps> = ({
   ...props
 }) => {
   return (
-    <SyntaxHighlighter language={language} style={duotoneLight} {...props}>
+    <SyntaxHighlighter language={language} style={vscDarkPlus} {...props}>
       {code || children || ''}
     </SyntaxHighlighter>
   );

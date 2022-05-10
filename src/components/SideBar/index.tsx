@@ -48,6 +48,7 @@ const SideBar = () => {
         defaultSelectedKeys={['components']}
         defaultOpenKeys={['components']}
         mode="inline"
+        theme="dark"
         items={items}
       />
     </div>
