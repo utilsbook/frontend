@@ -13,6 +13,7 @@ import {
   CentosIcon,
   FigmaIcon,
   JenkinsIcon,
+  ListIcon,
   ModaoIcon,
   MozillaIcon,
   NginxIcon,
@@ -21,6 +22,7 @@ import {
   SSLIcon,
   TencentCloudIcon,
   TypeScriptIcon,
+  VsCodeIcon,
   VueIcon,
 } from '../../assets/icons';
 
@@ -46,11 +48,15 @@ const items = [
     getItem('按钮 Button', 'button'),
   ]),
   getItem('算法实现', 'algorithms', <CalculatorOutlined />, [
-    getItem('Lodash', 'lodash', null, [getItem('_.isNil（待完成）', 'isNil')]),
+    getItem('Lodash', 'lodash', null, [getItem('_.isNil', 'isNil')]),
   ]),
   getItem('其它内容', 'others', <AppstoreAddOutlined />, [
     getItem('腾讯云（待完成）', 'tengxunyun', <TencentCloudIcon />),
-    getItem('阿里云（待完成）', 'aliyun', <AliyunOutlined />),
+    getItem(
+      '阿里云（待完成）',
+      'aliyun',
+      <AliyunOutlined style={{ color: '#ED732E' }} />
+    ),
     getItem('CodeSandbox（待完成）', 'codesandbox', <CodeSandboxOutlined />),
     getItem('PS Online（待完成）', 'ps_onine', <BgColorsOutlined />),
     getItem('MDN（待完成）', 'mdn', <MozillaIcon />),
@@ -64,6 +70,8 @@ const items = [
     getItem('SSL（待完成）', 'ssl', <SSLIcon />),
     getItem('TypeScript（待完成）', 'typescript', <TypeScriptIcon />),
     getItem('SASS（待完成）', 'sass', <SASSIcon />),
+    getItem('滴答清单（待完成）', 'didalist', <ListIcon />),
+    getItem('VSCode（待完成）', 'vscode', <VsCodeIcon />),
   ]),
 ];
 

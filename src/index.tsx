@@ -6,6 +6,7 @@ import NotFound from './components/NotFound';
 import Component from './pages/Component';
 import './index.scss';
 import Home from './pages/Home';
+import Lodash from './pages/Algorithms/Lodash';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,6 +18,11 @@ root.render(
         <Route path="/" element={<Layout />}>
           <Route path="components" element={<Component />}>
             <Route path=":slug" />
+          </Route>
+          <Route path="algorithms">
+            <Route path="lodash">
+              <Route path=":slug" element={<Lodash />} />
+            </Route>
           </Route>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
