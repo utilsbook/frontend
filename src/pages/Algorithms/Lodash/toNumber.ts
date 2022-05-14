@@ -5,16 +5,16 @@ import isSymbol from './isSymbol.js'
 const NAN = 0 / 0
 
 /** Used to match leading and trailing whitespace. */
-const reTrim = /^\\s+|\\s+\$/g
+const reTrim = /^\\s+|\\s+$/g
 
 /** Used to detect bad signed hexadecimal string values. */
-const reIsBadHex = /^[-+]0x[0-9a-f]+\$/i
+const reIsBadHex = /^[-+]0x[0-9a-f]+$/i
 
 /** Used to detect binary string values. */
-const reIsBinary = /^0b[01]+\$/i
+const reIsBinary = /^0b[01]+$/i
 
 /** Used to detect octal string values. */
-const reIsOctal = /^0o[0-7]+\$/i
+const reIsOctal = /^0o[0-7]+$/i
 
 /** Built-in method references without a dependency on \`root\`. */
 const freeParseInt = parseInt
@@ -64,5 +64,5 @@ function toNumber(value) {
 
 export default toNumber
 
-`
+`;
 export default str;

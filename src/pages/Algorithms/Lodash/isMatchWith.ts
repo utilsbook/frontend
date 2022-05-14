@@ -16,7 +16,7 @@ import getMatchData from './.internal/getMatchData.js'
  * @example
  *
  * function isGreeting(value) {
- *   return /^h(?:i|ello)\$/.test(value)
+ *   return /^h(?:i|ello)$/.test(value)
  * }
  *
  * function customizer(objValue, srcValue) {
@@ -38,5 +38,5 @@ function isMatchWith(object, source, customizer) {
 
 export default isMatchWith
 
-`
+`;
 export default str;

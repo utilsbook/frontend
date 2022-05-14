@@ -15,7 +15,7 @@ const str = `import baseIsEqual from './.internal/baseIsEqual.js'
  * @example
  *
  * function isGreeting(value) {
- *   return /^h(?:i|ello)\$/.test(value)
+ *   return /^h(?:i|ello)$/.test(value)
  * }
  *
  * function customizer(objValue, othValue) {
@@ -38,5 +38,5 @@ function isEqualWith(value, other, customizer) {
 
 export default isEqualWith
 
-`
+`;
 export default str;

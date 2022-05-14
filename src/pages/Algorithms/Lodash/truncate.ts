@@ -12,7 +12,7 @@ const DEFAULT_TRUNC_LENGTH = 30
 const DEFAULT_TRUNC_OMISSION = '...'
 
 /** Used to match \`RegExp\` flags from their coerced string values. */
-const reFlags = /\\w*\$/
+const reFlags = /\\w*$/
 
 /**
  * Truncates \`string\` if it's longer than the given maximum string length.
@@ -112,5 +112,5 @@ function truncate(string, options) {
 
 export default truncate
 
-`
+`;
 export default str;
