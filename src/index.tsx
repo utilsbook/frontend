@@ -22,6 +22,7 @@ root.render(
           <Route path="algorithms">
             <Route path="lodash">
               <Route path=":slug" element={<Lodash />} />
+              <Route path="internal/:slug" element={<Lodash />} />
             </Route>
           </Route>
           <Route path="/" element={<Home />} />
